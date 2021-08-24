@@ -19,7 +19,7 @@ Archivo txt con  los folios que estan en estado “en proceso de cuentas persona
 
 ## CONTENIDO
 
-Para la contrucción de este job se presenta un pequeño digrama de los pasos a seguir:
+Para la construcción de este job se presenta un pequeño digrama de los pasos a seguir:
 
 
      1.0.Archivo con los folios de reembolsos
