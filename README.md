@@ -1,4 +1,4 @@
-# Plan de atención a incidencias por reembolso y liquidaciones
+# Plan de atención a incidencias por reembolso 
 ###### .
 
 ## INTRODUCCIÓN
@@ -17,67 +17,62 @@ Archivo txt con  los folios que estan en estado “en proceso de cuentas persona
 * Importe
 
 
-
-## RECOMMENDED
-
-
-
-## INSTALLATION
- 
-
-
-
 ## CONTENIDO
 
 Para la contrucción de este job se presenta un pequeño digrama de los pasos a seguir:
 
-1.0   Archivo con los folios
-      e reembolsos
 
 
-2.0 Leer el archivo
-
-
-2.2 Buscar en la tabla
-   TAT234_REEMBOLSO
-   el estado del folio
-
-
+  
+     1.0.Archivo con los folios de reembolsos
+            │  
+            ▼
+     2.0 Leer el archivo
+            │
+            ▼
+     2.2 Buscar en la tabla TAT234_REEMBOLSO 
+     el estado del folio
+            │
+            ▼
     ¿el folio tiene estado de ────────► 2.3 Escribir los datos en la
       "proceso en cuentas       no          tabla TAT285_CTAPERS_BIT
         personales" ?                       con código 178
-
-
-3.0 Buscar y realizar un conteo
-   de las notas encontradas
-   en la tabla TAT235_NOTA_REEMB
-
+           │
+           ▼
+     3.0 Buscar y realizar un conteo de las notas 
+     encontradas en la tabla TAT235_NOTA_REEMB
+           │
+           ▼
 
      ¿el conteo es igual a 0?           3.1 Escribir los datos en la
                                             tabla TAT285_CTAPERS_BIT
                                             con código 176
-4.0 Buscar y realizar un conteo de
-  los datos encontrados en la tabla
-   TAT320_ACEC
+                                            
+      4.0 Buscar y realizar un conteo de 
+      los datos encontrados en la tabla 
+      TAT320_ACEC
 
+           │
+           ▼
 
      ¿el conteo es igual a 0?
-
-5.0 Borrar datos de tabla
+     
+     5.0 Borrar datos de tabla
     TAT248_ASIENT_CONT
+    
+    6.0 Ejecutar contabilidad
+    
+    7.0 Buscar y realizar un conteo 
+    de los datos encontrados 
+    en la tabla TAT320_ACEC
 
 
-6.0 Ejecutar contabilidad
-
-
-7.0 Buscar y realizar un conteo
-  de los datos encontrados
-  en la tabla TAT320_ACEC
 
 
      ¿el conteo es igual a 0?            7.1 Escribir los datos en la
                                              tabla TAT285_CTAPERS_BIT
                                              con código 175
-7.2  Escribir los d tos en la
+      7.2  Escribir los d tos en la
      tabla TAT285_CTAPERS_BIT
      con código 177
+
