@@ -1,4 +1,4 @@
-# Plan de atención a incidencias por reembolso 
+## PLAN DE ATENCIÓN DE INCIDENCIAS POR REEMBOLSOS
 ###### .
 
 ## INTRODUCCIÓN
@@ -7,7 +7,7 @@ Para realizar la recuperación de folios de reembolsos de la conta se necesita c
 
 
 
-## REQUIRIMIENTOS
+## REQUERIMIENTOS
 
 Archivo txt con  los folios que estan en estado “en proceso de cuentas personales” con los siguientes campos y separado con |:
 
@@ -30,13 +30,12 @@ Para la contrucción de este job se presenta un pequeño digrama de los pasos a 
      2.0 Leer el archivo
             │
             ▼
-     2.2 Buscar en la tabla TAT234_REEMBOLSO 
-     el estado del folio
+     2.2 Buscar en la tabla TAT234_REEMBOLSO el estado del folio
             │
             ▼
-    ¿el folio tiene estado de ────────► 2.3 Escribir los datos en la
-      "proceso en cuentas       no          tabla TAT285_CTAPERS_BIT
-        personales" ?                       con código 178
+    ¿el folio tiene estado de    ────────►    2.3 Escribir los datos en lat abla TAT285_CTAPERS_BIT
+      "proceso en cuentas       no           con código 178
+        personales" ?                          
            │
            ▼
      3.0 Buscar y realizar un conteo de las notas 
@@ -44,10 +43,9 @@ Para la contrucción de este job se presenta un pequeño digrama de los pasos a 
            │
            ▼
 
-     ¿el conteo es igual a 0?           3.1 Escribir los datos en la
-                                            tabla TAT285_CTAPERS_BIT
-                                            con código 176
-                                            
+     ¿el conteo es igual a 0?   ────────►  3.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
+            │                               con código 176
+            ▼                                                            
       4.0 Buscar y realizar un conteo de 
       los datos encontrados en la tabla 
       TAT320_ACEC
@@ -56,22 +54,21 @@ Para la contrucción de este job se presenta un pequeño digrama de los pasos a 
            ▼
 
      ¿el conteo es igual a 0?
-     
-     5.0 Borrar datos de tabla
-    TAT248_ASIENT_CONT
-    
+           │
+           ▼
+     5.0 Borrar datos de tabla TAT248_ASIENT_CONT
+           │
+           ▼
     6.0 Ejecutar contabilidad
-    
-    7.0 Buscar y realizar un conteo 
-    de los datos encontrados 
-    en la tabla TAT320_ACEC
-
-
-
-
-     ¿el conteo es igual a 0?            7.1 Escribir los datos en la
-                                             tabla TAT285_CTAPERS_BIT
-                                             con código 175
+           │
+           ▼
+    7.0 Buscar y realizar un conteo  de 
+     los datos encontrados en la tabla TAT320_ACEC
+           │
+           ▼
+     ¿el conteo es igual a 0?   ────────►    7.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
+           │                                    con código 175
+           ▼                                   
       7.2  Escribir los d tos en la
      tabla TAT285_CTAPERS_BIT
      con código 177
