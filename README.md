@@ -1,10 +1,5 @@
-## Plan de atención a incidencias por reembolso y liquidaciones
+# Plan de atención a incidencias por reembolso y liquidaciones
 ###### .
-
-## INDICE
-   
-
-
 
 ## INTRODUCCIÓN
 
@@ -12,12 +7,13 @@ Para realizar la recuperación de folios de reembolsos de la conta se necesita c
 
 
 
-## REQUIREMENTS
+## REQUIRIMIENTOS
 
-Archivo txt con los siguientes campos y separado con |:
+Archivo txt con  los folios que estan en estado “en proceso de cuentas personales” con los siguientes campos y separado con |:
 
 * Folio
 * Identificador de viajero
+* Identificador de empresa
 * Importe
 
 
