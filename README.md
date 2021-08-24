@@ -31,43 +31,41 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
      2.2 Buscar en la tabla TAT234_REEMBOLSO el estado del folio
               │
               ▼
-    ¿el folio tiene estado de    ────────►    2.3 Escribir los datos en lat abla TAT285_CTAPERS_BIT
-      "proceso en cuentas          no           con código 178
+      ¿el folio tiene estado de    ────────►    2.3 Escribir los datos en lat abla TAT285_CTAPERS_BIT
+      "proceso en cuentas           no           con código 178
         personales" ?
         
               │ si
               ▼
      3.0 Buscar y realizar un conteo de las notas 
-     encontradas en la tabla TAT235_NOTA_REEMB
+          encontradas en la tabla TAT235_NOTA_REEMB
               │
               ▼
-     ¿el conteo es igual a 0?   ────────►  3.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
+       ¿el conteo es igual a 0?   ────────►  3.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
               │ si                no          con código 176
               ▼                                                            
-      4.0 Buscar y realizar un conteo de 
-      los datos encontrados en la tabla 
-      TAT320_ACEC
+      4.0 Buscar y realizar un conteo de  
+          los datos encontrados en la tabla TAT320_ACEC
 
              │ si
              ▼
 
-     ¿el conteo es igual a 0?
+        ¿el conteo es igual a 0?
              │
              ▼
-     5.0 Borrar datos de tabla TAT248_ASIENT_CONT
+      5.0 Borrar datos de tabla TAT248_ASIENT_CONT
              │
              ▼
-    6.0 Ejecutar contabilidad
+      6.0 Ejecutar contabilidad
              │
              ▼
-    7.0 Buscar y realizar un conteo  de 
-     los datos encontrados en la tabla TAT320_ACEC
+      7.0 Buscar y realizar un conteo  de 
+          los datos encontrados en la tabla TAT320_ACEC
              │
              ▼
-     ¿el conteo es igual a 0?     ────────►    7.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
+        ¿el conteo es igual a 0?     ────────►    7.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
              │  si                  no            con código 175
              ▼                                   
-      7.2  Escribir los d tos en la
-     tabla TAT285_CTAPERS_BIT
-     con código 177
+      7.2  Escribir los d tos en la tabla 
+         TAT285_CTAPERS_BIT con código 177
 
