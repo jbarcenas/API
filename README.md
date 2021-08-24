@@ -31,11 +31,33 @@ Archivo txt con  los folios que estan en estado “en proceso de cuentas persona
 
 Para la contrucción de este job se presenta un pequeño digrama de los pasos a seguir:
 
- 
-
-
-## CONFIGURATION
-
-
-
-
+-- 1.0 Archivo con los folios
+--    de reem. / liq.
+-- 
+-- 
+--            │
+--            ▼
+--  2.0 Leer el archivo
+-- 
+-- 
+--  el folio tiene estado de               2.1 No se procesa
+--   "proceso en cuentas
+--     personales"
+-- 
+-- 
+--  3.0 Buscar los datos de la
+--     tabla TAT320_ACEC
+-- 
+-- 
+--  3.1 Realizar un conteo de los
+--     datos encontrados
+-- 
+-- 
+--  el conteo es igual a 0
+-- 
+-- 
+--  4.0 Borrar datos de tabla
+--      TAT248_ASIENT_CONT
+-- 
+-- 
+--  5.0 Ejecutar contabilidad
