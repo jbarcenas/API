@@ -88,7 +88,7 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
       10.0 Realizar la suma de los 
 	  importes de debes y haberes 
 	  de la tablas TAT321_CONTA_ACEC 
-	  y TAT248_ASIENT_CONT 
+	  y TAT248_ASIENT_CONT
 	     │
              ▼
 	¿son iguales los debes 
@@ -97,8 +97,8 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
              ▼						                    TAT285_CTAPERS_BIT con código 1075
      11.0  Escribir los datos en 
 	  la tabla TAT285_CTAPERS_BIT 
-	  con código 1077
-	     │ 
+	  con código 107
+	     │
              ▼
       12.0  Extraer los datos de la 
 	  tabla TAT285_CTAPERS_BIT en 
