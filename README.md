@@ -81,8 +81,8 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
              │
              ▼
        ¿el conteo es diferente a 0?    	       ────────►    	       9.1 Actualizar el estado del folio a     	────────►      9.2 Escribir los datos en la tabla    	
-             │  si                               no                    "incidencias cuentas personales"                               TAT285_CTAPERS_BIT con código 1075
-             ▼                                                            en la tabla TAT231_LIQUIDACION
+             │  si                               no                       "incidencias cuentas personales"                               TAT285_CTAPERS_BIT con código 1075
+             ▼                                                             en la tabla TAT231_LIQUIDACION
      10.0 Buscar y realizar un 
 	   conteo de los datos 
 	   encontrados en las tablas
@@ -105,7 +105,7 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
          y haber de las tablas?                  ────────►                11.1 Borrar los datos de las tablas  	
              │ si                                 no                       TAT321_CONTA_ACEC, TAT320_ACEC,  
              ▼                                                             TAT266_MOV_EXITOSO TAT248_ASIENT_CONT y 		 
-      12.0  Escribir los datos                                            escribir en la tabla TAT285_CTAPERS_BIT con código 1075
+      12.0  Escribir los datos                                             escribir en la tabla TAT285_CTAPERS_BIT con código 1075
 	  en la tabla TAT285_CTAPERS_BIT 
 	  con código 1077
 		
