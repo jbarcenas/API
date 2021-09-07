@@ -35,8 +35,8 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	   el estado del folio
               │
               ▼
-      ¿el folio tiene estado de       		────────►             3.1 Escribir los datos en la tabla 
-      "incidencias cuentas             	         no                  	  TAT285_CTAPERS_BIT con código 1078
+      ¿el folio tiene estado de       	 ────────►             3.1 Escribir los datos en la tabla 
+      "incidencias cuentas             	  no                  	  TAT285_CTAPERS_BIT con código 1078
         personales" ?
         
               │ si
@@ -47,8 +47,8 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  TAT232_NOTA_LIQ
               │
               ▼
-       ¿el conteo es igual a 0?        	       ────────►             4.1 Escribir los datos en la tabla 
-                                                  no                    TAT285_CTAPERS_BIT con código 1076
+       ¿el conteo es igual a 0?           ────────►             4.1 Escribir los datos en la tabla 
+                                           no                    TAT285_CTAPERS_BIT con código 1076
               │ si                       
               ▼                                                            
      5.0 Buscar y realizar un 
@@ -57,8 +57,8 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  tabla TAT320_ACEC
              │ 
              ▼
-        ¿el conteo es igual a 0?	      ────────►              5.1 Escribir los datos en la tabla 
-                                                  no                    TAT285_CTAPERS_BIT con código 1075
+        ¿el conteo es igual a 0?          ────────►              5.1 Escribir los datos en la tabla 
+                                             no                    TAT285_CTAPERS_BIT con código 1075
              │si
              ▼
      6.0 Actualizar el estado 
@@ -80,8 +80,8 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  tabla TAT320_ACEC
              │
              ▼
-       ¿el conteo es diferente a 0?    		  ────────►    	       9.1 Actualizar el estado del folio a     	────────►      9.2 Escribir los datos en la tabla    	
-             │  si                                  no                    "incidencias cuentas personales"                               TAT285_CTAPERS_BIT con código 1075
+       ¿el conteo es diferente a 0?    	       ────────►    	       9.1 Actualizar el estado del folio a     	────────►      9.2 Escribir los datos en la tabla    	
+             │  si                               no                    "incidencias cuentas personales"                               TAT285_CTAPERS_BIT con código 1075
              ▼                                                            en la tabla TAT231_LIQUIDACION
      10.0 Buscar y realizar un 
 	   conteo de los datos 
@@ -103,15 +103,15 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
              ▼
 	¿son iguales los debes 
 	y haber de las tablas?                  ────────►                11.1 Borrar los datos de las tablas  	
-             │ si                                 no                        TAT321_CONTA_ACEC, TAT320_ACEC,  
-             ▼                                                               TAT266_MOV_EXITOSO TAT248_ASIENT_CONT y 		 
-       12.0  Escribir los datos                                             escribir en la tabla TAT285_CTAPERS_BIT con código 1075
+             │ si                                 no                       TAT321_CONTA_ACEC, TAT320_ACEC,  
+             ▼                                                             TAT266_MOV_EXITOSO TAT248_ASIENT_CONT y 		 
+      12.0  Escribir los datos                                            escribir en la tabla TAT285_CTAPERS_BIT con código 1075
 	  en la tabla TAT285_CTAPERS_BIT 
 	  con código 1077
 		
              │
              ▼
-       13.0  Extraer los datos de 
+      13.0  Extraer los datos de 
 	 la tabla TAT285_CTAPERS_BIT 
 	 en un archivo VIBALIQ_I.txt
 	 en la carpeta reportes.
