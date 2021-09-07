@@ -46,7 +46,7 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	 tabla TAT232_NOTA_LIQ
               │
               ▼  
-       ¿el conteo es igual a 0?                ────────►              4.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
+       ¿el conteo es igual a 0?               ────────►              4.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
                                                no                        con código 1076
               │ si                        
               ▼                                                            
