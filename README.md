@@ -102,10 +102,10 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
              │
              ▼
 	¿son iguales los debes 
-	y haber de las tablas?		 	────────►       		 11.1 Borrar los datos de las tablas TAT321_CONTA_ACEC 	
-             │ si                                 no                               TAT320_ACEC, TAT266_MOV_EXITOSO TAT248_ASIENT_CONT y 
-             ▼                                                                     escribir en la tabla TAT285_CTAPERS_BIT con código 1075		 
-       12.0  Escribir los datos 
+	y haber de las tablas?                  ────────►                11.1 Borrar los datos de las tablas  	
+             │ si                                 no                        TAT321_CONTA_ACEC, TAT320_ACEC,  
+             ▼                                                               TAT266_MOV_EXITOSO TAT248_ASIENT_CONT y 		 
+       12.0  Escribir los datos                                             escribir en la tabla TAT285_CTAPERS_BIT con código 1075
 	  en la tabla TAT285_CTAPERS_BIT 
 	  con código 1077
 		
