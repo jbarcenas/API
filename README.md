@@ -36,9 +36,8 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  tabla TAT320_ACEC
              │ si
              ▼
-        ¿el conteo es igual a 0?              ────────►           3.1 Escribir los datos en la tabla T
-						no                AT285_CTAPERS_BIT con código 1075
-             │si
+        ¿el conteo es igual a 0?              ────────►           3.1 Escribir los datos en la tabla 
+             │si                               no                  TAT285_CTAPERS_BIT con código 1075
              ▼
      4.0 Borrar datos de 
 	  tabla TAT248_ASIENT_CONT
