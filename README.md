@@ -78,7 +78,7 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
              │
              ▼
         ¿el conteo es diferente a 0?           ────────►               9.1 Actualizar el estado del folio a    	      ────────►	     9.2 Escribir los datos en la tabla	
-	                                           no                     "incidencias dep cuentas de cuentas                             TAT285_CTAPERS_BIT con código 1075
+	                                            no                     "incidencias dep cuentas de cuentas                             TAT285_CTAPERS_BIT con código 1075
              │  si                                                      personales" en la tabla TAT234_REEMBOLSO                       			     
              ▼                                                          
      10.0 Buscar y realizar un conteo 
