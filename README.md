@@ -98,9 +98,9 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
              │
              ▼
          ¿son iguales los debes 
-	y haber de las tablas?		       ────────►             11.1 Borrar los datos de las tablas TAT321_CONTA_ACEC, 
-                                                  no                  TAT320_ACEC, TAT266_MOV_EXITOSO,TAT248_ASIENT_CONT y
-             │si                                                       escribir en la tabla TAT285_CTAPERS_BITcon código 1075
+	y haber de las tablas?		         ────────►             11.1 Borrar los datos de las tablas TAT321_CONTA_ACEC, 
+                                                  no                    TAT320_ACEC, TAT266_MOV_EXITOSO,TAT248_ASIENT_CONT y
+             │si                                                        escribir en la tabla TAT285_CTAPERS_BITcon código 1075
              ▼
      12.0  Escribir los 
 	datos en la tabla 
