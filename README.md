@@ -82,25 +82,25 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  TAT248_ASIENT_CONT
              │
              ▼
-        ¿el conteo es mayor a 0?
+       ¿el conteo es mayor a 0?
              │  si                       
              ▼       
-	 10.0 Realizar la suma de los 
+      10.0 Realizar la suma de los 
 	  importes de debes y haberes 
 	  de la tablas TAT321_CONTA_ACEC 
 	  y TAT248_ASIENT_CONT 
-			 │
+	     │
              ▼
-		¿son iguales los debes 
-		y haber de las tablas?		        ────────►                10.1 Borrar los datos de las tablas TAT321_CONTA_ACEC,TAT320_ACEC 
-			 │ si						      no				          TAT266_MOV_EXITOSO,TAT248_ASIENT_CONT y escribir en la tabla 
-             ▼														      TAT285_CTAPERS_BIT con código 1075
+	¿son iguales los debes 
+	 y haber de las tablas?		        ────────►                10.1 Borrar los datos de las tablas TAT321_CONTA_ACEC,TAT320_ACEC 
+	     │ si			         no			    TAT266_MOV_EXITOSO,TAT248_ASIENT_CONT y escribir en la tabla 
+             ▼						                    TAT285_CTAPERS_BIT con código 1075
      11.0  Escribir los datos en 
 	  la tabla TAT285_CTAPERS_BIT 
 	  con código 1077
-			 │ 
+	     │ 
              ▼
-	 12.0  Extraer los datos de la 
+      12.0  Extraer los datos de la 
 	  tabla TAT285_CTAPERS_BIT en 
 	  un archivo VIBAREEMCP.txt
 	  en la carpeta reportes.
