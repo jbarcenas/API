@@ -81,7 +81,7 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
              │
              ▼
        ¿el conteo es diferente a 0?    	       ────────►    	       9.1 Actualizar el estado del folio a     	────────►      9.2 Escribir los datos en la tabla    	
-             │  si                               no                       "incidencias cuentas personales"                               TAT285_CTAPERS_BIT con código 1075
+             │  si                               no                        "incidencias cuentas personales"                               TAT285_CTAPERS_BIT con código 1075
              ▼                                                             en la tabla TAT231_LIQUIDACION
      10.0 Buscar y realizar un 
 	   conteo de los datos 
