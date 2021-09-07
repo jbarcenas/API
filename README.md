@@ -1,5 +1,5 @@
 ## PLAN DE ATENCIÓN DE INCIDENCIAS POR DOTACIONES
-###### .
+###### . Procesamiento de folios con estatus RE09 
 
 ## INTRODUCCIÓN
 
@@ -80,11 +80,11 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
              │  si                               no             dotación al que se  tenia                         la tabla TAT285_CTAPERS_BIT 
              ▼                                                  y actualizar  el campo                            con código 1075
      10.0 Buscar y realizar un                                  FH_DEPOSITO  a nul en la 
-	  conteo de los datos                                   tabla TAT216_DOTACION
-        encontrados en las tablas 
-        TAT321_CONTA_ACEC,
-	  TAT266_MOV_EXITOSO y 
-	  TAT248_ASIENT_CONT
+       conteo de los datos                                      tabla TAT216_DOTACION
+       encontrados en las tablas 
+       TAT321_CONTA_ACEC,
+       TAT266_MOV_EXITOSO y 
+       TAT248_ASIENT_CONT
              │
              ▼
         ¿el conteo es mayor a 0?
