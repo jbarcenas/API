@@ -76,10 +76,10 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  la tabla TAT320_ACEC
              │
              ▼
-        ¿el conteo es diferente a 0?    	────────►      	    9.1 Actualizar el estado de la dotación al que se           ────────►      9.2 Escribir los datos en la tabla   
-             │  si                               no                   tenia y actualizar el campo FH_DEPOSITO                                   TAT285_CTAPERS_BIT con código 1075
-             ▼                                                        a null en la tabla TAT216_DOTACION
-     10.0 Buscar y realizar un 
+        ¿el conteo es diferente a 0?    	────────►      	  9.1 Actualizar el estado de la dotación         ────────►     9.2 Escribir los datos en la tabla   
+             │  si                               no                  al que se  tenia y actualizar                                 TAT285_CTAPERS_BIT con código 1075
+             ▼                                                        el campo FH_DEPOSITO  a null 
+     10.0 Buscar y realizar un                                       en la tabla TAT216_DOTACION
 	  conteo de los datos 
 	  encontrados en las tablas
       TAT321_CONTA_ACEC,
