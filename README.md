@@ -100,8 +100,8 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
      11.0  Escribir los datos en 
 	  la tabla TAT285_CTAPERS_BIT 
 	  con código 107
-	     │
-             ▼
+	  │  
+              ▼
       12.0  Extraer los datos de la 
 	  tabla TAT285_CTAPERS_BIT en 
 	  un archivo VIBAREEMCP.txt
