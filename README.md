@@ -34,8 +34,8 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  el estado del folio
               │
               ▼
-      ¿el folio tiene estado de          ────────►             3.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
-      "en proceso en ctas                  no                   con código 1078
+      ¿el folio tiene estado de            ────────►           3.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
+      "en proceso en ctas                   no                   con código 1078
         personales" ?
         
               │ si
@@ -45,7 +45,7 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	   la tabla TAT235_NOTA_REEMB
               │
               ▼
-       ¿el conteo es igual a 0?           ────────►           4.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
+       ¿el conteo es igual a 0?            ────────►           4.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
                                             no                    con código 1076
               │ si                       
               ▼                                                            
@@ -55,7 +55,7 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 											
              │ 				
              ▼
-        ¿el conteo es igual a 0?	      ────────►              5.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
+        ¿el conteo es igual a 0?	    ────────►           5.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
                                              no                      con código 1075
              │si
              ▼
@@ -71,8 +71,8 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  tabla TAT320_ACEC
              │
              ▼
-        ¿el conteo es diferente a 0?      ────────►                8.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
-                                            no                         con código 1075
+        ¿el conteo es diferente a 0?        ────────►             8.1 Escribir los datos en la tabla TAT285_CTAPERS_BIT
+                                             no                       con código 1075
              │  si                       
              ▼  
      9.0 Buscar y realizar un conteo 
@@ -89,17 +89,13 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  importes de debes y haberes 
 	  de la tablas TAT321_CONTA_ACEC 
 	  y TAT248_ASIENT_CONT
-	  
-	     │
-             ▼
+              │
+              ▼
 	¿son iguales los debes 
-	 y haber de las tablas?		        ────────►                10.1 Borrar los datos de las tablas TAT321_CONTA_ACEC,TAT320_ACEC 
-	    					  no			    TAT266_MOV_EXITOSO,TAT248_ASIENT_CONT y escribir en la tabla
-	     │  si			        			    TAT285_CTAPERS_BIT con código 1075
-             ▼	
-	     │  
-             ▼
-	     
+	 y haber de las tablas?		       ────────►          10.1 Borrar los datos de las tablas TAT321_CONTA_ACEC,TAT320_ACEC 
+	 					no         	       TAT266_MOV_EXITOSO,TAT248_ASIENT_CONT y escribir en la tabla 
+              │ si							TAT285_CTAPERS_BIT con código 1075
+              ▼
      11.0  Escribir los datos en 
 	  la tabla TAT285_CTAPERS_BIT 
 	  con código 107  
