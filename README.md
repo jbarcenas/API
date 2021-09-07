@@ -96,11 +96,13 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	 y haber de las tablas?		        ────────►                10.1 Borrar los datos de las tablas TAT321_CONTA_ACEC,TAT320_ACEC 
 	    					  no			    TAT266_MOV_EXITOSO,TAT248_ASIENT_CONT y escribir en la tabla
 	     │  si			        			    TAT285_CTAPERS_BIT con código 1075
-             ▼						                   
+             ▼	
+	     │  
+             ▼
+	     
      11.0  Escribir los datos en 
 	  la tabla TAT285_CTAPERS_BIT 
-	  con código 107
-	      
+	  con código 107  
               │
               ▼
       12.0  Extraer los datos de la 
