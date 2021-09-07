@@ -77,7 +77,7 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  tabla TAT320_ACEC
              │
              ▼
-        ¿el conteo es diferente a 0?          ────────►               9.1 Actualizar el estado del folio a    	      ────────►	     9.2 Escribir los datos en la tabla	
+        ¿el conteo es diferente a 0?           ────────►               9.1 Actualizar el estado del folio a    	      ────────►	     9.2 Escribir los datos en la tabla	
 	                                         no                     "incidencias dep cuentas de cuentas                             TAT285_CTAPERS_BIT con código 1075
              │  si                                                      personales" en la tabla TAT234_REEMBOLSO                       			     
              ▼                                                          
