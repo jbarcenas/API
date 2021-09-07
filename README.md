@@ -89,12 +89,14 @@ Para la construcción de este job se presenta un pequeño digrama de los pasos a
 	  importes de debes y haberes 
 	  de la tablas TAT321_CONTA_ACEC 
 	  y TAT248_ASIENT_CONT
+	  
 	     │
              ▼
 	¿son iguales los debes 
 	 y haber de las tablas?		        ────────►                10.1 Borrar los datos de las tablas TAT321_CONTA_ACEC,TAT320_ACEC 
-	     │ si			         no			    TAT266_MOV_EXITOSO,TAT248_ASIENT_CONT y escribir en la tabla 
-             ▼						                    TAT285_CTAPERS_BIT con código 1075
+	    					  no			    TAT266_MOV_EXITOSO,TAT248_ASIENT_CONT y escribir en la tabla
+	     │  si			        			    TAT285_CTAPERS_BIT con código 1075
+             ▼						                   
      11.0  Escribir los datos en 
 	  la tabla TAT285_CTAPERS_BIT 
 	  con código 107
